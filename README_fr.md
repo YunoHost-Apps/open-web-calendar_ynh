@@ -26,6 +26,7 @@ Intégrez un calendrier Web hautement personnalisable dans votre site Web à l'a
 
 ![Capture d’écran de open web calendar](./doc/screenshots/screenshot.png)
 
+
 ## Documentations et ressources
 
 * Site officiel de l’app : <https://open-web-calendar.hosted.quelltext.eu/>
