@@ -24,7 +24,7 @@ Embed a highly customizable web calendar into your website using ICal source lin
 
 ## Screenshots
 
-![Screenshot of open web calendar](./doc/screenshots/example.jpg)
+![Screenshot of open web calendar](./doc/screenshots/screenshot.png)
 
 ## Documentation and resources
 

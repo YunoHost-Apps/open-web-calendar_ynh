@@ -24,7 +24,7 @@ Intégrez un calendrier Web hautement personnalisable dans votre site Web à l'a
 
 ## Captures d’écran
 
-![Capture d’écran de open web calendar](./doc/screenshots/example.jpg)
+![Capture d’écran de open web calendar](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 
