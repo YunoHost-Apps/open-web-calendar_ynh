@@ -3,7 +3,7 @@
 packaging_format = 2
 
 id = "open-web-calendar"
-name = "open web calendar"
+name = "Open Web Calendar"
 description.en = "Embed a web calendar into your own website"
 description.fr = "Intégrez un calendrier Web à votre propre site Web"
 
