@@ -20,7 +20,7 @@ code = "https://github.com/niccokunzmann/open-web-calendar/"
 [integration]
 yunohost = ">= 11.2"
 architectures = "all"
-multi_instance = true
+multi_instance = false
 
 ldap = false
 
