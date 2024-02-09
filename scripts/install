@@ -31,12 +31,12 @@ ynh_add_nginx_config
 # Create a dedicated systemd config
 ynh_add_systemd_config
 
-yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Customizable web calendar" --log="/var/log/$app/$app.log"
 
 #=================================================
 # BUILDING OPEN WEB CALENDAR
 #=================================================
-ynh_script_progression --message="Building $app..."
+ynh_script_progression --message="Building $app..." --weight=5
 
 pushd "$install_dir"
 	python3 -m venv venv

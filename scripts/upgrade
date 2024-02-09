@@ -21,7 +21,6 @@ ynh_systemd_action --service_name="$app" --action="stop" --log_path="/var/log/$a
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-
 ynh_script_progression --message="Upgrading source files..." --weight=1
 
 # Download, check integrity, uncompress and patch the source from manifest.toml
@@ -38,7 +37,18 @@ ynh_add_nginx_config
 
 ynh_add_systemd_config
 
-yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Customizable web calendar" --log="/var/log/$app/$app.log"
+
+#=================================================
+# BUILDING OPEN WEB CALENDAR
+#=================================================
+ynh_script_progression --message="Building $app..." --weight=5
+
+pushd "$install_dir"
+	python3 -m venv venv
+	venv/bin/pip install --upgrade pip
+	venv/bin/pip install -r requirements.txt
+popd
 
 #=================================================
 # RECONFIGURE THE APP (UPDATE CONF, APPLY MIGRATIONS...)
