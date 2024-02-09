@@ -1,1 +1,1 @@
-Intégrez un calendrier Web hautement personnalisable dans votre site Web à l'aide des liens sources ICal
+Intégrez un calendrier Web hautement personnalisable dans votre site Web à l'aide des liens sources ICal.
