@@ -16,7 +16,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Embed a highly customizable web calendar into your website using ICal source links 
+Embed a highly customizable web calendar into your website using ICal source links.
 
 **Shipped version:** 1.25~ynh1
 
