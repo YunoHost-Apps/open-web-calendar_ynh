@@ -18,7 +18,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 Intégrez un calendrier Web hautement personnalisable dans votre site Web à l'aide des liens sources ICal.
 
-**Version incluse :** 1.27~ynh1
+**Version incluse :** 1.28~ynh1
 
 **Démo :** https://open-web-calendar.hosted.quelltext.eu/
 
