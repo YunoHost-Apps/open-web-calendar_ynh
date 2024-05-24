@@ -18,7 +18,7 @@ NON debe editarse manualmente.
 
 Embed a highly customizable web calendar into your website using ICal source links.
 
-**Versión proporcionada:** 1.33~ynh1
+**Versión proporcionada:** 1.34~ynh1
 
 **Demo:** <https://open-web-calendar.hosted.quelltext.eu/>
 
