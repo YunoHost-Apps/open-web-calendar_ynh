@@ -5,7 +5,7 @@
 
 # YunoHost 上的 Open Web Calendar
 
-[![集成程度](https://dash.yunohost.org/integration/open-web-calendar.svg)](https://dash.yunohost.org/appci/app/open-web-calendar) ![工作状态](https://ci-apps.yunohost.org/ci/badges/open-web-calendar.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/open-web-calendar.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/open-web-calendar.svg)](https://ci-apps.yunohost.org/ci/apps/open-web-calendar/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/open-web-calendar.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/open-web-calendar.maintain.svg)
 
 [![使用 YunoHost 安装 Open Web Calendar](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=open-web-calendar)
 
@@ -18,7 +18,7 @@
 
 Embed a highly customizable web calendar into your website using ICal source links.
 
-**分发版本：** 1.36~ynh1
+**分发版本：** 1.37~ynh1
 
 **演示：** <https://open-web-calendar.hosted.quelltext.eu/>
 
