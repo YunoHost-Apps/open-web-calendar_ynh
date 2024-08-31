@@ -17,7 +17,7 @@ ynh_systemctl --service="$app" --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir"
+ynh_setup_source --dest_dir="$install_dir" --keep="app.json"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
@@ -46,12 +46,12 @@ popd
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression "Updating configuration..."
+#ynh_script_progression "Updating configuration..."
 
-ynh_config_add --template="app.json" --destination="$install_dir/app.json"
+#ynh_config_add --template="app.json" --destination="$install_dir/app.json"
 
-chmod 400 "$install_dir/app.json"
-chown "$app:$app" "$install_dir/app.json"
+#chmod 400 "$install_dir/app.json"
+#chown "$app:$app" "$install_dir/app.json"
 
 #=================================================
 # START SYSTEMD SERVICE
