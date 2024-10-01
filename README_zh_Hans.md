@@ -18,7 +18,7 @@
 
 Embed a highly customizable web calendar into your website using ICal source links.
 
-**分发版本：** 1.39~ynh2
+**分发版本：** 1.40~ynh1
 
 **演示：** <https://open-web-calendar.hosted.quelltext.eu/>
 
