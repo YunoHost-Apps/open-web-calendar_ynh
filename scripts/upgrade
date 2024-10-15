@@ -11,8 +11,6 @@ ynh_script_progression "Stopping $app's systemd service..."
 ynh_systemctl --service="$app" --action="stop" --log_path="systemd"
 
 #=================================================
-# "REBUILD" THE APP (DEPLOY NEW SOURCES, RERUN NPM BUILD...)
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Upgrading source files..."
@@ -28,7 +26,7 @@ ynh_config_add_nginx
 
 ynh_config_add_systemd
 
-yunohost service add "$app" --description="Customizable web calendar" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Customizable Web calendar" --log="/var/log/$app/$app.log"
 
 #=================================================
 # BUILDING OPEN WEB CALENDAR
@@ -40,18 +38,6 @@ pushd "$install_dir"
 	venv/bin/pip install --upgrade pip
 	venv/bin/pip install -r requirements.txt
 popd
-
-#=================================================
-# RECONFIGURE THE APP (UPDATE CONF, APPLY MIGRATIONS...)
-#=================================================
-# UPDATE A CONFIG FILE
-#=================================================
-#ynh_script_progression "Updating configuration..."
-
-#ynh_config_add --template="app.json" --destination="$install_dir/app.json"
-
-#chmod 400 "$install_dir/app.json"
-#chown "$app:$app" "$install_dir/app.json"
 
 #=================================================
 # START SYSTEMD SERVICE
