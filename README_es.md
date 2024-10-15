@@ -18,7 +18,7 @@ No se debe editar a mano.
 
 Embed a highly customizable web calendar into your website using ICal source links.
 
-**Versión actual:** 1.39~ynh2
+**Versión actual:** 1.41~ynh1
 
 **Demo:** <https://open-web-calendar.hosted.quelltext.eu/>
 
@@ -35,7 +35,7 @@ Embed a highly customizable web calendar into your website using ICal source lin
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/open-web-calendar_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/open-web-calendar_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
