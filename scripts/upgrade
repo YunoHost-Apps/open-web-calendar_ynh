@@ -15,7 +15,10 @@ ynh_systemctl --service="$app" --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --keep="app.json"
+mkdir -p $install_dir
+
+chmod 750 "$install_dir"
+chown "$app:" "$install_dir"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
@@ -36,7 +39,7 @@ ynh_script_progression "Building $app..."
 pushd "$install_dir"
 	python3 -m venv venv
 	venv/bin/pip install --upgrade pip
-	venv/bin/pip install -r requirements.txt
+	venv/bin/pip install open-web-calendar==$(ynh_app_upstream_version)
 popd
 
 #=================================================
