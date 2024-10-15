@@ -7,7 +7,7 @@ name = "Open Web Calendar"
 description.en = "Embed a web calendar into your own website"
 description.fr = "Intégrez un calendrier Web à votre propre site Web"
 
-version = "1.39~ynh2"
+version = "1.41~ynh1"
 
 maintainers = []
 
@@ -18,7 +18,7 @@ demo = "https://open-web-calendar.hosted.quelltext.eu/"
 code = "https://github.com/niccokunzmann/open-web-calendar/"
 
 [integration]
-yunohost = ">= 11.2.29"
+yunohost = ">= 11.2.30"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = false
@@ -44,8 +44,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/niccokunzmann/open-web-calendar/archive/refs/tags/v1.39.tar.gz"
-    sha256 = "cb78197d6278b7e667650f28348e1130fd895c30e8e5d57a44ba786ef48325da"
+    url = "https://github.com/niccokunzmann/open-web-calendar/archive/refs/tags/v1.41.tar.gz"
+    sha256 = "f6857ad4c9aaa5a23e0abe7b05e01e6ed2ca8fdc489e6d543ae00f854c5fb61f"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
