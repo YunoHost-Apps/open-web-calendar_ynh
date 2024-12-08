@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Open Web Calendar for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/open-web-calendar.svg)](https://ci-apps.yunohost.org/ci/apps/open-web-calendar/) ![Working status](https://ci-apps.yunohost.org/ci/badges/open-web-calendar.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/open-web-calendar.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/open-web-calendar)](https://ci-apps.yunohost.org/ci/apps/open-web-calendar/)
+![Working status](https://apps.yunohost.org/badge/state/open-web-calendar)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/open-web-calendar)
 
 [![Install Open Web Calendar with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=open-web-calendar)
 
@@ -18,7 +20,7 @@ It shall NOT be edited by hand.
 
 Embed a highly customizable web calendar into your website using ICal source links.
 
-**Shipped version:** 1.41~ynh1
+**Shipped version:** 1.42~ynh1
 
 **Demo:** <https://open-web-calendar.hosted.quelltext.eu/>
 
