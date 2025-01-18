@@ -20,7 +20,7 @@ It shall NOT be edited by hand.
 
 Embed a highly customizable web calendar into your website using ICal source links.
 
-**Shipped version:** 1.42~ynh1
+**Shipped version:** 1.43~ynh1
 
 **Demo:** <https://open-web-calendar.hosted.quelltext.eu/>
 
