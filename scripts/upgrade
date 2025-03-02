@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -8,25 +12,27 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Stopping $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="stop" --log_path="systemd"
+ynh_systemctl --service="$app" --action="stop" --log_path="/var/log/$app/$app.log"
+
+#=================================================
+# ENSURE DOWNWARD COMPATIBILITY
+#=================================================
+ynh_script_progression "Ensuring downward compatibility..."
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --keep="app.json"
+# Download, check integrity, uncompress and patch the source from manifest.toml
+ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="app.json"
 
 #=================================================
-# REAPPLY SYSTEM CONFIGURATIONS
+# UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression "Upgrading system configurations related to $app..."
+ynh_script_progression "Updating $app's configuration files..."
 
-ynh_config_add_nginx
-
-ynh_config_add_systemd
-
-yunohost service add "$app" --description="Customizable Web calendar" --log="/var/log/$app/$app.log"
+ynh_config_add --template="app.json" --destination="$install_dir/app.json"
 
 #=================================================
 # BUILDING OPEN WEB CALENDAR
@@ -36,15 +42,27 @@ ynh_script_progression "Building $app..."
 pushd "$install_dir"
 	python3 -m venv venv
 	venv/bin/pip install --upgrade pip
-	venv/bin/pip install -r requirements.txt
+	venv/bin/pip install -r requirements/base.txt
 popd
+
+#=================================================
+# REAPPLY SYSTEM CONFIGURATIONS
+#=================================================
+ynh_script_progression "Upgrading system configurations related to $app..."
+
+ynh_config_add_nginx
+
+ynh_config_add_systemd
+yunohost service add "$app" --description="Customizable Web calendar" --log="/var/log/$app/$app.log"
+
+ynh_config_add_logrotate
 
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="start" --log_path="systemd"
+ynh_systemctl --service="$app" --action="start" --wait_until="Running on" --log_path="/var/log/$app/$app.log"
 
 #=================================================
 # END OF SCRIPT
