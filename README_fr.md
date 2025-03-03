@@ -20,7 +20,7 @@ Il NE doit PAS être modifié à la main.
 
 Intégrez un calendrier Web hautement personnalisable dans votre site Web à l'aide des liens sources ICal.
 
-**Version incluse :** 1.45~ynh1
+**Version incluse :** 1.47~ynh1
 
 **Démo :** <https://open-web-calendar.hosted.quelltext.eu/>
 
