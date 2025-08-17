@@ -4,7 +4,7 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/master/logos/open-web-calendar.png" width="32px" alt="Logo of Open Web Calendar">
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/open-web-calendar.png" width="32px" alt="Logo of Open Web Calendar">
   Open Web Calendar, packaged for YunoHost
 </h1>
 
@@ -12,14 +12,20 @@ Embed a web calendar into your own website
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://open-web-calendar.hosted.quelltext.eu/)
 [![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://open-web-calendar.hosted.quelltext.eu/)
-![Version: 1.49~ynh1](https://img.shields.io/badge/Version-1.49~ynh1-rgba(0,150,0,1)?style=for-the-badge)
+[![Version: 1.51~ynh1](https://img.shields.io/badge/Version-1.51~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/open-web-calendar/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/open-web-calendar"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
 <a href="https://github.com/YunoHost-Apps/open-web-calendar_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
+
+## Screenshots
+![Screenshot of Open Web Calendar](./doc/screenshots/screenshot.png)
+
 ## 📦 Developer info
+
+[![Automatic tests level](https://apps.yunohost.org/badge/cilevel/open-web-calendar)](https://ci-apps.yunohost.org/ci/apps/open-web-calendar/)
 
 🛠️ Upstream Open Web Calendar repository: <https://github.com/niccokunzmann/open-web-calendar/>
 
