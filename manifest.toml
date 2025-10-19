@@ -35,6 +35,10 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
+    [install.path]
+    type = "path"
+    default = "/calendar"
+
     [install.init_main_permission]
     type = "group"
     default = "visitors"
