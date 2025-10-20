@@ -22,6 +22,8 @@ ynh_script_progression "Updating NGINX web server configuration..."
 # this will most likely adjust NGINX config correctly
 ynh_config_change_url_nginx
 
+change_common_js true
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
