@@ -14,6 +14,11 @@
       "description": "To speed up loading time, the requests to urls can be cached. This also delays displaying updates.",
       "value": "600",
       "required": false
+    },
+    "SERVER_NAME" : {
+      "description": "customizing server name for responses",
+      "value": "__DOMAIN____PATH__",
+      "required": false
     }
   },
   "image": "heroku/python",
@@ -24,3 +29,4 @@
     "open-source"
   ]
 }
+
