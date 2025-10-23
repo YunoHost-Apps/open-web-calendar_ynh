@@ -1,0 +1,22 @@
+#:schema https://github.com/YunoHost/apps/raw/main/schemas/config_panel.v1.schema.json
+
+version = "1.0"
+
+[main]
+
+services = ["__APP__"]
+# or services = ["nginx", "__APP__"] to also reload-or-restart nginx
+
+    [main.customization]
+    name.en = "Customization"
+    name.fr = "Personalisation"
+    optional = false
+        ## Note: visible and optional properties are also available for questions
+
+        [main.customization.contact_url]
+        ask.en = "Configuration file"
+        ask.fr = "Fichier de configuration"
+        type = "file"
+        bind = "/etc/owc/specification.yml"
+
+

@@ -43,6 +43,7 @@ popd
 ynh_script_progression "Adapting $app..."
 
 change_common_js
+install_config_file
 
 #=================================================
 # SYSTEM CONFIGURATION
