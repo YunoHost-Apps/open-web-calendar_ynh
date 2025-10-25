@@ -15,10 +15,3 @@ change_common_js() {
 
     sed -i "s:document\.location\.host:document\.location\.host + \"$path\":g" $commonfile
 }
-
-install_config_file() {
-    mkdir /etc/owc
-    cp ../sources/default_specification.yml /etc/owc/specification.yml
-
-    chown -R $app:$app /etc/owc
-}
