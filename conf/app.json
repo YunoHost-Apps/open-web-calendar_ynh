@@ -14,11 +14,6 @@
       "description": "To speed up loading time, the requests to urls can be cached. This also delays displaying updates.",
       "value": "600",
       "required": false
-    },
-    "OWC_SPECIFICATION" : {
-      "description": "Custom Server configuration",
-      "value": "/etc/owc/specification.yml",
-      "required": false
     }
   },
   "image": "heroku/python",
