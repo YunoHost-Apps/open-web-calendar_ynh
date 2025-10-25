@@ -17,5 +17,5 @@ services = ["__APP__"]
         ask.en = "Configuration file"
         ask.fr = "Fichier de configuration"
         type = "file"
-        bind = "__install_dir__/open_web_calendar/defaut_specification.yml"
+        bind = "__INSTALL_DIR__/open_web_calendar/default_specification.yml"
 
