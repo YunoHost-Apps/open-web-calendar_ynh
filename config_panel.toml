@@ -14,8 +14,8 @@ services = ["__APP__"]
         ## Note: visible and optional properties are also available for questions
 
         [main.customization.contact_url]
-        ask.en = "Configuration file"
-        ask.fr = "Fichier de configuration"
+        ask.en = "Calendar specification file"
+        ask.fr = "Fichier de spécifications du calendrier"
         type = "file"
         bind = "__INSTALL_DIR__/open_web_calendar/default_specification.yml"
 
