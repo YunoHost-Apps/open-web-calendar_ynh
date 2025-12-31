@@ -18,7 +18,7 @@ demo = "https://open-web-calendar.hosted.quelltext.eu/"
 code = "https://github.com/niccokunzmann/open-web-calendar/"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.38"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = false
